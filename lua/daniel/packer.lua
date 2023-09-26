@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
 	}
 
 
+
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
@@ -22,10 +23,8 @@ return require('packer').startup(function(use)
 		end
 	})
 
-	use { "catppuccin/nvim", as = "catppuccin" }
-
-
-	use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use { "catppuccin/nvim", as = "catppuccin" } 
+    use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
 	use("https://github.com/ThePrimeagen/harpoon")
 
