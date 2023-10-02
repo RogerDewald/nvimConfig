@@ -22,6 +22,19 @@ local cmp_mappings = lsp_zero.defaults.cmp_mappings({
 require("luasnip.loaders.from_vscode").load({ include = {"python", "cpp", "javascript", "html"}})
 
 
+cmp.setup(
+{
+    sources = cmp.config.sources(
+    {
+        {name = "nvim_lsp"},
+        {name = "luasnip"},
+
+    },
+    {
+        {name = "buffer"}
+    })
+})
+
 lsp_zero.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
