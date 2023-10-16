@@ -9,6 +9,8 @@ sudo apt install g++
 
 sudo apt install npm
 
+install neovim from neovim.io
+
 install packer.nvim
 
 install nvm from https://github.com/nvm-sh/nvm
