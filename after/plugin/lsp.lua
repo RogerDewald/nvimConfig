@@ -19,7 +19,6 @@ local cmp_mappings = lsp_zero.defaults.cmp_mappings({
   ["<C-Space>"] = cmp.mapping.complete(),
 })
 
-require("luasnip.loaders.from_vscode").load({ include = {"python", "cpp", "javascript", "html"}})
 
 
 cmp.setup(
@@ -34,6 +33,7 @@ cmp.setup(
         {name = "buffer"}
     })
 })
+require("luasnip.loaders.from_vscode").load({ include = {"python", "cpp", "javascript", "html"}})
 
 lsp_zero.set_preferences({
     suggest_lsp_servers = false,
