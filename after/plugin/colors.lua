@@ -6,8 +6,13 @@
 --
 
 require("catppuccin").setup({
-	favlour = "mocha",
+	flavor = "mocha",
 	no_italic = true,
+    custom_highlights = function(colors)
+        return {
+            Comment = {fg="#24db43"},
+        }
+    end
 })
 
 
