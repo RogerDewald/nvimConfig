@@ -12,6 +12,8 @@ sudo apt upgrade
 
 sudo apt install g++
 
+sudo apt install git
+
 sudo apt install npm
 
 install ripgrep from https://github.com/BurntSushi/ripgrep
